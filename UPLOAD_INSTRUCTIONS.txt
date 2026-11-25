@@ -1,0 +1,20 @@
+UPLOAD THIS PACKAGE TO THE ROOT OF THE GITHUB REPOSITORY
+Repository: rithikeshrathi3117/Version-L2-Smart-Maintain
+
+Upload all of these together:
+- index.html
+- Code.gs (reference copy; the active copy remains in Google Apps Script)
+- assets folder with every file inside it
+
+Important:
+- Do not upload only index.html. The assets folder is required.
+- GitHub Pages source remains main / (root).
+- The equipment QR base URL remains:
+  https://rithikeshrathi3117.github.io/Version-L2-Smart-Maintain/?equipment=EQUIPMENT_ID
+- Mandatory daily AMC mail triggers remain temporarily disabled.
+- AMC expiry reminders remain enabled.
+
+Why this package is corrected:
+The earlier index.html was approximately 10 MB because images were embedded as very
+large base64 strings. This package extracts those images to normal files in /assets,
+reducing index.html substantially and avoiding a long blank-page parse/render.
